@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateStats">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:id="@+id/teamname"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textColor="@color/background"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/team1textview"
+        android:layout_height="wrap_content"
+        android:text="Team1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/team2textview"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textColor="@color/background"
+
+        android:layout_height="wrap_content"
+        android:text="Team1"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearlayoutmain"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/teamname"
+        android:weightSum="6"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/linealayoutshots"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:text="Shot"
+                android:textSize="20sp"
+
+                android:layout_marginLeft="45dp"
+                android:textColor="@android:color/white"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                android:id="@+id/buttonshotsteam1"
+                app:cub_color="@color/third"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true"
+                />
+
+
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:text="Shot"
+                android:textSize="20sp"
+                android:layout_marginLeft="60dp"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                android:id="@+id/buttonshotsteam2"
+                app:cub_color="@color/colorAccent"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true"
+                />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/shotsontarget"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="45dp"
+                android:text="On Target"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                android:id="@+id/buttonshotsontargetteam1"
+                app:cub_color="@color/third"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true"
+                />
+
+
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:text="On Target"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="60dp"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                android:id="@+id/buttonshotsontargetteam2"
+                app:cub_color="@color/colorAccent"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/passes"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:text="Pass"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="30dp"
+
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                android:id="@+id/buttonpassteam1"
+                app:cub_color="@color/third"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true"
+                />
+
+
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:text="Pass"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                android:id="@+id/buttonpassteam2"
+                app:cub_color="@color/colorAccent"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/fouls"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="45dp"
+                android:text="Foul"
+                android:textSize="20sp"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                android:id="@+id/buttonfoulsteam1"
+                app:cub_color="@color/third"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true"
+                />
+
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:id="@+id/buttonfoulsteam2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="60dp"
+                android:text="Foul"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                app:cub_color="@color/colorAccent"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/offside"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="45dp"
+                android:text="Offside"
+                android:textSize="20sp"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                android:id="@+id/buttonoffsideteam1"
+                app:cub_color="@color/third"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true"
+                />
+
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:id="@+id/buttonoffsideteam2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="80dp"
+                android:textColor="@android:color/white"
+                android:text="Offside"
+                android:textSize="20sp"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                app:cub_color="@color/colorAccent"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true" />
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/corners"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="45dp"
+                android:text="Corner"
+                android:textSize="20sp"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                android:id="@+id/buttoncornersteam1"
+                app:cub_color="@color/third"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true"
+                />
+
+
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:text="Corner"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="80dp"
+                app:cub_border_color="@color/color_4062BB"
+                app:cub_border_radius="4dp"
+                android:id="@+id/buttoncornersteam2"
+                app:cub_color="@color/colorAccent"
+                app:cub_hover_color="@color/colorAccent2"
+                app:cub_riple_effect="true"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
